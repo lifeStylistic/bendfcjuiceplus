@@ -94,7 +94,7 @@
   .brand-text{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.04em;text-transform:uppercase;line-height:1;}
   .brand-text small{display:block;font-size:12px;letter-spacing:.2em;color:var(--gold-dark);margin-top:4px;font-weight:700;}
   .nav{display:flex;align-items:center;gap:28px;}
-  .nav a{font-weight:600;font-size:15px;text-decoration:none;color:var(--ink-2);padding:6px 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;}
+  .nav a{white-space:nowrap;font-weight:600;font-size:15px;text-decoration:none;color:var(--ink-2);padding:6px 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;}
   .nav a:hover,.nav a.active{color:var(--ink);border-bottom-color:var(--gold);}
   .nav .btn{padding:10px 20px;font-size:16px;border-bottom:none;color:#fff;}
   .nav .btn:hover{border-bottom:none;color:#fff;}
@@ -307,7 +307,7 @@
     .tl{border-left:0;border-top:1px solid var(--line);}
     .tl:first-child{border-top:0;}
   }
-  @media (max-width:880px){
+  @media (max-width:1080px){
     .menu-toggle{display:block;}
     .nav{position:fixed;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(15,17,19,.1);padding:8px 24px 20px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;}
     .nav.open{opacity:1;visibility:visible;transform:none;}
@@ -394,6 +394,7 @@
       <a href="#science">The Science</a>
       <a href="#partner">Become a Partner</a>
       <a href="#faq">FAQ</a>
+      <a href="/athletes.html">Athletes</a>
       <a class="btn btn-primary" href="https://bendfc.juiceplus.com" target="_blank" rel="noopener">Shop Now</a>
     </nav>
   </div>
@@ -785,6 +786,7 @@
         <a href="#science">The Science</a>
         <a href="#partner">Become a Partner</a>
         <a href="#faq">FAQ</a>
+        <a href="/athletes.html">Athletes</a>
         <a href="https://www.bendfc.com" target="_blank" rel="noopener">BendFC.com</a>
       </nav>
     </div>

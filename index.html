@@ -226,6 +226,15 @@
   .tl span{display:block;font-size:14px;color:var(--ink-2);margin-top:6px;line-height:1.45;}
   .timeline-caption{font-size:13px;color:var(--muted);margin-top:10px;}
 
+  /* Physician quote */
+  .quote{margin:48px 0 0;background:var(--black);color:#fff;border-radius:18px;padding:60px 44px 40px;position:relative;overflow:hidden;}
+  .quote::before{content:"\201C";position:absolute;left:28px;top:-18px;font-family:Georgia,serif;font-size:180px;line-height:1;color:var(--gold);opacity:.35;}
+  .quote blockquote{margin:0;position:relative;font-size:clamp(20px,2.4vw,26px);line-height:1.45;font-weight:500;max-width:900px;}
+  .quote figcaption{margin-top:22px;position:relative;}
+  .quote figcaption b{display:block;font-family:var(--display);font-size:20px;letter-spacing:.04em;text-transform:uppercase;color:var(--gold);}
+  .quote figcaption span{display:block;font-size:14px;color:#b9c0c6;margin-top:2px;}
+  .quote .disclose{display:block;font-size:12px;color:#8d959c;margin-top:10px;}
+
   /* Accordions */
   .accordion details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;}
   .accordion summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;font-size:17px;display:flex;justify-content:space-between;align-items:center;gap:16px;}
@@ -337,6 +346,8 @@
     .hero{padding:36px 0 64px;}
     .hero .lead{font-size:18px;}
     .hero-actions .btn{flex:1 1 auto;}
+    .quote{padding:52px 22px 26px;}
+    .quote::before{left:12px;font-size:130px;}
     .video-section{padding-top:56px;}
     .play{width:68px;height:68px;}
     .play svg{width:26px;height:26px;}
@@ -613,6 +624,15 @@
         <div class="card sci-card"><div class="icon green"><svg><use href="#i-wind"/></svg></div><h3>Better engine</h3><p>Within 2–3 months, research shows better blood flow and oxygen delivery plus rising antioxidant levels.</p><span class="cite">Juice Plus+ clinical research timeline</span></div>
         <div class="card sci-card"><div class="icon"><svg><use href="#i-heart"/></svg></div><h3>Built to last</h3><p>Supports healthy cardiovascular function, DNA protection and the Omega-3 Index: long-game habits for life.</p><span class="cite">Multiple peer-reviewed trials</span></div>
       </div>
+
+      <figure class="quote">
+        <blockquote>&ldquo;After looking at all the clinical research done on Juice Plus+, I recognized that there is nothing else available anywhere in the world, with or without a prescription, that has been shown to do all those things in the human body.&rdquo;</blockquote>
+        <figcaption>
+          <b>Richard E. DuBois, M.D.</b>
+          <span>Former Chief of Internal Medicine, Atlanta Medical Center</span>
+          <small class="disclose">Dr. DuBois speaks on behalf of The Juice Plus+ Company. His views are his own; individual results vary.</small>
+        </figcaption>
+      </figure>
 
       <div class="timeline" aria-label="When you'll feel it">
         <div class="tl"><b>1–10 hrs</b><i>First activity</i><span>Polyphenols enter the bloodstream, ready to work.</span></div>

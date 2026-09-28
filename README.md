@@ -4,8 +4,9 @@ Source for https://bendfcjuiceplus.com, hosted on Netlify (project `bendfcjuicep
 
 ## Site files
 
-- `index.html` — landing page with social-share (Open Graph) tags; forwards visitors to the brochure.
-- `brochure.html` — the full interactive brochure. It is a self-contained export: images, fonts and scripts are embedded in the file.
+- `index.html` — the whole site: a single scrolling page (Healthy Starts, club impact, research, products, Partner, FAQ, contact) with a sticky menu that jumps to each section. Plain HTML/CSS with a few lines of JS for the mobile menu; fonts from Google Fonts (Barlow / Barlow Condensed).
+- `images/` — web-sized images used by the page (crest, product photo, team photo, QR codes, favicon).
+- `brochure.html` + `_redirects` — the old interactive brochure address now forwards to the home page, so existing links and QR codes keep working. The previous brochure export is in the git history.
 - `og-preview.png` — 1200×630 social preview image and favicon (referenced by `index.html`). Recovered from a pasted copy of the live image, so it is slightly recompressed; replace it with the original export if one turns up.
 
 ## Source artwork (`assets/`, not used by the pages)

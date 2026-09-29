@@ -28,7 +28,8 @@
 
     // Healthy Starts
     ['.steps .card', 'left', true],
-    ['.glance', 'right'],
+    ['.hs-video', 'right'],
+    ['.glance', 'up'],
     ['.ages .age', 'up', true],
     ['.who', 'fade'],
 

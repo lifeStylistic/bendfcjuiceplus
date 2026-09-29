@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Healthy Starts × Bend FC — Infographic</title>
+<meta name="description" content="One-page overview of Healthy Starts with Bend FC: free Juice Plus+ for kids ages 4–25, what the club earns, and why it matters.">
+<link rel="canonical" href="https://bendfcjuiceplus.com/infographic.html">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<meta property="og:title" content="Healthy Starts × Bend FC">
+<meta property="og:description" content="Free Juice Plus+ for kids ages 4–25, recurring support for Bend FC. See the numbers.">
+<meta property="og:image" content="https://bendfcjuiceplus.com/og-preview.png">
+<style>
+  @font-face{font-family:'Barlow';font-weight:400;font-style:normal;font-display:swap;src:url('fonts/barlow-latin-400-normal.woff2') format('woff2');}
+  @font-face{font-family:'Barlow';font-weight:500;font-style:normal;font-display:swap;src:url('fonts/barlow-latin-500-normal.woff2') format('woff2');}
+  @font-face{font-family:'Barlow';font-weight:600;font-style:normal;font-display:swap;src:url('fonts/barlow-latin-600-normal.woff2') format('woff2');}
+  @font-face{font-family:'Barlow';font-weight:700;font-style:normal;font-display:swap;src:url('fonts/barlow-latin-700-normal.woff2') format('woff2');}
+  @font-face{font-family:'Barlow Condensed';font-weight:700;font-style:normal;font-display:swap;src:url('fonts/barlow-condensed-latin-700-normal.woff2') format('woff2');}
+  @font-face{font-family:'Barlow Condensed';font-weight:800;font-style:normal;font-display:swap;src:url('fonts/barlow-condensed-latin-800-normal.woff2') format('woff2');}
+
+  :root{
+    --ink:#15181b; --ink-2:#3d444b; --muted:#6a727a; --line:#e4e1da;
+    --sand:#f6f4ef; --black:#0f1113;
+    --gold:#c6a15b; --gold-dark:#9c7a35; --gold-soft:#f5eddc;
+    --green:#4f9a2e; --green-dark:#2f5d1e; --green-soft:#eef5e8;
+    --display:'Barlow Condensed',Impact,'Arial Narrow',sans-serif;
+    --body:'Barlow',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0;background:#dcd8cf;color:var(--ink);font-family:var(--body);-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  h1,h2,h3{font-family:var(--display);font-weight:800;text-transform:uppercase;margin:0;line-height:.95;letter-spacing:.005em;}
+  p{margin:0;}
+  a{color:inherit;}
+
+  /* Letter page: 8.5in × 11in */
+  .page{width:8.5in;height:11in;margin:24px auto;background:#fff;box-shadow:0 20px 50px rgba(0,0,0,.18);display:flex;flex-direction:column;overflow:hidden;}
+
+  /* Header */
+  .top{background:var(--black);color:#fff;padding:.22in .42in .2in;display:flex;gap:.3in;align-items:center;position:relative;}
+  .top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--gold) 0 50%,var(--green) 50% 100%);}
+  .crest{height:1.02in;width:auto;flex:none;background:#fff;border-radius:12px;padding:8px 10px;}
+  .kicker{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);}
+  .top h1{font-size:35px;margin-top:4px;}
+  .top h1 span{display:block;}
+  .top h1 .g{color:var(--gold);}
+  .top h1 .gr{color:#7cc253;}
+  .top .sub{margin-top:6px;font-size:13px;color:#cfd4d8;line-height:1.4;max-width:4.9in;}
+
+  .body{padding:.17in .42in .15in;flex:1;display:flex;flex-direction:column;gap:.1in;}
+  .label{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:5px;}
+  .h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:22px;line-height:1;}
+
+  /* Key facts */
+  .facts{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:10px;}
+  .fact{border-radius:12px;padding:10px 13px;border:1px solid var(--line);background:#fff;}
+  .fact b{display:block;font-family:var(--display);font-weight:800;font-size:29px;line-height:.95;}
+  .fact span{display:block;font-size:12px;color:var(--ink-2);margin-top:4px;line-height:1.3;}
+  .fact.hero{background:var(--green-dark);border-color:var(--green-dark);color:#fff;}
+  .fact.hero b{color:#fff;}
+  .fact.hero b em{font-style:normal;color:#b9e59d;}
+  .fact.hero span{color:#e3efdb;}
+  .fact.gold b{color:var(--gold-dark);}
+  .fact.pct{background:var(--gold-soft);border-color:#ead9b5;}
+  .fact.pct b{color:var(--gold-dark);}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+  .step{display:flex;gap:10px;align-items:flex-start;background:var(--sand);border-radius:12px;padding:8px 12px;}
+  .step i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;font-style:normal;font-family:var(--display);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;}
+  .step b{display:block;font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.03em;text-transform:uppercase;}
+  .step span{display:block;font-size:11.5px;color:var(--ink-2);line-height:1.3;margin-top:2px;}
+
+  /* Numbers */
+  .numbers{display:grid;grid-template-columns:1.45fr 1fr;gap:14px;}
+  .chart{border:1px solid var(--line);border-radius:12px;padding:12px 14px 10px;}
+  .chart-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:6px;}
+  .chart-head .h2{font-size:18px;}
+  .chart-head small{font-size:10.5px;color:var(--muted);}
+  .bars{display:grid;grid-template-columns:62px 1fr;row-gap:4px;column-gap:8px;align-items:center;}
+  .bars dt{font-size:11.5px;color:var(--ink-2);text-align:right;font-weight:600;}
+  .bars dt small{display:block;font-size:9px;font-weight:500;color:var(--muted);line-height:1;}
+  .bars dd{margin:0;display:flex;align-items:center;gap:6px;}
+  .bar{height:14px;background:var(--green);border-radius:0 4px 4px 0;min-width:3px;}
+  .bars dd.max .bar{background:var(--green-dark);}
+  .bars dd span{font-size:12px;font-weight:700;color:var(--ink);white-space:nowrap;}
+  .chart-foot{margin-top:7px;font-size:10px;color:var(--muted);line-height:1.35;}
+
+  .side{display:flex;flex-direction:column;gap:10px;}
+  .per{background:var(--black);color:#fff;border-radius:12px;padding:12px 14px;}
+  .per .label{color:var(--gold);}
+  .per .row{display:flex;justify-content:space-between;align-items:baseline;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:12.5px;color:#cfd4d8;}
+  .per .row:last-child{border-bottom:0;}
+  .per .row b{font-family:var(--display);font-size:22px;color:#fff;font-weight:800;}
+  .per .row b.gd{color:var(--gold);}
+  .passive{background:var(--green-soft);border-radius:12px;padding:12px 14px;flex:1;}
+  .passive .h2{font-size:18px;color:var(--green-dark);}
+  .passive p{font-size:12px;color:var(--ink-2);line-height:1.33;margin-top:4px;}
+  .passive ul{margin:6px 0 0;padding:0;list-style:none;}
+  .passive li{font-size:11.5px;color:var(--ink);padding:2px 0 2px 16px;position:relative;line-height:1.3;}
+  .passive li::before{content:"";position:absolute;left:2px;top:6px;width:8px;height:5px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg);}
+
+  /* Why + Lunch & learn */
+  .why{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:10px;}
+  .card{border:1px solid var(--line);border-radius:12px;padding:10px 13px;}
+  .card .h2{font-size:17px;}
+  .card p{font-size:11.5px;color:var(--ink-2);line-height:1.35;margin-top:4px;}
+  .card .big{font-family:var(--display);font-weight:800;font-size:30px;color:var(--green);line-height:1;margin-top:4px;}
+  .fund{display:grid;grid-template-columns:1fr 1fr;gap:3px 8px;margin-top:6px;}
+  .fund span{font-size:11.5px;font-weight:600;padding-left:14px;position:relative;}
+  .fund span::before{content:"";position:absolute;left:0;top:5px;width:7px;height:7px;border-radius:2px;background:var(--gold);}
+  .card.lunch{background:var(--gold-soft);border-color:#ead9b5;position:relative;}
+  .card.lunch .tag{display:inline-block;font-family:var(--display);font-weight:700;font-size:10px;letter-spacing:.14em;text-transform:uppercase;background:var(--black);color:var(--gold);border-radius:999px;padding:3px 8px;margin-bottom:5px;}
+
+  /* CTA */
+  .cta{margin-top:auto;background:var(--black);color:#fff;padding:.16in .42in .12in;display:flex;align-items:center;gap:.26in;}
+  .cta .qr{background:#fff;border-radius:10px;padding:6px;flex:none;}
+  .cta .qr img{width:.85in;height:.85in;display:block;}
+  .cta .go{flex:1;}
+  .cta .go .kicker{font-size:11px;}
+  .cta .go a.url{display:inline-block;margin-top:2px;font-family:var(--display);font-weight:800;font-size:31px;letter-spacing:.01em;color:#fff;text-decoration:none;border-bottom:3px solid var(--green);line-height:1.05;}
+  .cta .go p{font-size:12px;color:#cfd4d8;margin-top:6px;}
+  .cta .contact{font-size:11.5px;color:#cfd4d8;text-align:right;line-height:1.5;}
+  .cta .contact b{display:block;color:#fff;font-size:13px;}
+  .cta .contact a{color:var(--gold);text-decoration:none;}
+  .fine{background:var(--black);color:#80878d;font-size:8px;line-height:1.35;padding:0 .42in .14in;}
+
+  /* Screen: fit small viewports by scaling the page, keeping the print layout intact */
+  .toolbar{max-width:8.5in;margin:18px auto 0;display:flex;justify-content:flex-end;gap:10px;padding:0 12px;}
+  .toolbar a{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;background:var(--black);color:#fff;padding:9px 16px;border-radius:8px;}
+  .toolbar a.alt{background:#fff;color:var(--ink);}
+  @media screen and (max-width:860px){
+    html,body{overflow-x:hidden;}
+    .toolbar{justify-content:center;}
+    .fit{transform-origin:top left;}
+  }
+  @page{size:letter;margin:0;}
+  @media print{
+    body{background:#fff;}
+    .page{margin:0;box-shadow:none;}
+    .toolbar{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="toolbar"><a class="alt" href="/">← Back to site</a><a href="/downloads/bendfc-healthy-starts-infographic.pdf" download>Download PDF</a></div>
+<div class="fit">
+<main class="page">
+
+  <header class="top">
+    <img class="crest" src="images/crest-lockup.png" alt="Bend FC and Juice Plus+ crest">
+    <div>
+      <div class="kicker">Bend FC × Juice Plus+ · Healthy Starts</div>
+      <h1><span>Healthy kids.</span><span class="g">Healthy families.</span><span class="gr">A stronger Bend FC.</span></h1>
+      <p class="sub">A whole-food nutrition program that gives kids free Juice Plus+ and gives the club a steady, recurring source of support.</p>
+    </div>
+  </header>
+
+  <div class="body">
+
+    <section class="facts" aria-label="Key facts">
+      <div class="fact hero"><b><em>FREE</em> Juice Plus+</b><span>for kids &amp; young adults <strong>ages 4–25</strong> with a qualifying adult subscription*</span></div>
+      <div class="fact gold"><b>$12</b><span>handling fee every 4 months. That's all families pay for the young person's product.</span></div>
+      <div class="fact pct"><b>5%</b><span>of every qualifying order goes back to Bend FC, every month.</span></div>
+    </section>
+
+    <section aria-label="How Healthy Starts works">
+      <div class="label">How Healthy Starts works</div>
+      <div class="steps">
+        <div class="step"><i>1</i><div><b>Subscribe</b><span>An adult (18+) starts a qualifying Juice Plus+ subscription.</span></div></div>
+        <div class="step"><i>2</i><div><b>Gift it free</b><span>Add a young person, 4–25. Their Fruit &amp; Veg Blends are free.</span></div></div>
+        <div class="step"><i>3</i><div><b>Build habits</b><span>Everything ships to one address, every 4 months.</span></div></div>
+      </div>
+    </section>
+
+    <section class="numbers" aria-label="What Bend FC earns">
+      <div class="chart">
+        <div class="chart-head"><div class="h2">What Bend FC earns each year</div><small>by number of adult subscriptions</small></div>
+        <dl class="bars">
+          <dt>25</dt><dd><div class="bar" style="width:1.42%"></div><span>$1,230</span></dd>
+          <dt>50</dt><dd><div class="bar" style="width:2.83%"></div><span>$2,460</span></dd>
+          <dt>100</dt><dd><div class="bar" style="width:5.67%"></div><span>$4,920</span></dd>
+          <dt>250</dt><dd><div class="bar" style="width:14.17%"></div><span>$12,300</span></dd>
+          <dt>500</dt><dd><div class="bar" style="width:28.33%"></div><span>$24,600</span></dd>
+          <dt>1,000</dt><dd><div class="bar" style="width:56.67%"></div><span>$49,200</span></dd>
+          <dt>1,500</dt><dd class="max"><div class="bar" style="width:85%"></div><span>$73,800</span></dd>
+        </dl>
+        <p class="chart-foot">5% of a Fruit + Vegetable + Berry Capsule subscription at $82/month, renewing all year. Based on the 2026 Juice Plus+ compensation plan; examples, not guarantees.*</p>
+      </div>
+      <div class="side">
+        <div class="per">
+          <div class="label">Every single family counts</div>
+          <div class="row"><span>Per subscription / month</span><b>$4.10</b></div>
+          <div class="row"><span>Per subscription / year</span><b class="gd">$49.20</b></div>
+        </div>
+        <div class="passive">
+          <div class="h2">Passive income for the club</div>
+          <p>Unlike car washes and bake sales, it keeps paying: families stay healthy, Bend FC keeps earning.</p>
+          <ul>
+            <li>Subscriptions renew automatically</li>
+            <li>~90% of families renew each year</li>
+            <li>No inventory, no events, no re-asking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" aria-label="Why it matters">
+      <div class="card">
+        <div class="label">Why it matters</div>
+        <div class="h2">Healthier kids</div>
+        <p>Whole-food nutrition from 20+ fruits, vegetables &amp; plants, and habits that last.</p>
+        <div class="big">89%</div>
+        <p>of Healthy Starts families say it made their young person more aware of their health.**</p>
+      </div>
+      <div class="card">
+        <div class="label">Where it goes</div>
+        <div class="h2">A stronger club</div>
+        <p>The club's share helps fund:</p>
+        <div class="fund"><span>Scholarships</span><span>Player development</span><span>Fields &amp; facilities</span><span>Club growth</span></div>
+      </div>
+      <div class="card lunch">
+        <span class="tag">Coming soon</span>
+        <div class="h2">Lunch &amp; Learn with a nutritionist</div>
+        <p>Bend FC is planning a series of lunch-and-learn classes led by a nutritionist, teaching kids and families better eating habits for growth, training and focus.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="cta">
+      <div class="qr"><img src="images/qr-bendfc-store.png" alt="QR code: bendfc.juiceplus.com"></div>
+      <div class="go">
+        <div class="kicker">Get healthy · Give back · Grow Bend FC</div>
+        <a class="url" href="https://bendfc.juiceplus.com" target="_blank" rel="noopener">bendfc.juiceplus.com</a>
+        <p>Enroll in Healthy Starts, shop, or become a Partner.</p>
+      </div>
+      <div class="contact"><b>James Traynor</b>Your Bend FC contact<br><a href="mailto:james.traynor@bendfctimbers.com">james.traynor@bendfctimbers.com</a><br>206-979-9792</div>
+    </div>
+    <p class="fine">* Free product requires a qualifying adult Juice Plus+ subscription; $12 handling fee per shipment. Club earnings are examples based on the 2026 Juice Plus+ compensation plan and assume subscriptions renew; they are not guarantees. Renewal rate is an estimate. ** Reported by families participating in Healthy Starts. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. A Bend FC fundraiser powered by The Juice Plus+ Company.</p>
+  </footer>
+
+</main>
+</div>
+<script>
+  // On narrow screens, scale the letter-size page down to fit instead of reflowing it.
+  (function(){
+    var fit=document.querySelector('.fit'), page=document.querySelector('.page');
+    function size(){
+      var w=document.documentElement.clientWidth, pw=816+24;
+      if(w<pw){var s=w/pw;fit.style.transform='scale('+s+')';fit.style.height=(page.offsetHeight+48)*s+'px';fit.style.width=pw+'px';fit.style.marginLeft=(12*s)+'px';}
+      else{fit.style.transform='';fit.style.height='';fit.style.width='';fit.style.marginLeft='';}
+    }
+    window.addEventListener('resize',size); size();
+  })();
+</script>
+</body>
+</html>

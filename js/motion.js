@@ -13,15 +13,7 @@
   // [selector, effect, stagger]: stagger true delays by sibling position;
   // a number N staggers by position within each row of N (grid columns).
   var RULES = [
-    // Home: hero
-    ['.hero .eyebrow', 'up'],
-    ['.hero-grid h1 span', 'up', true],
-    ['.hero > .wrap > h1', 'up'],
-    ['.hero .lead', 'up'],
-    ['.hero-actions', 'up'],
-    ['.hero .notice', 'up'],
-    ['.hero-media .photo', 'right'],
-    ['.hero-badge', 'zoom'],
+    // Home: hero entrance is a CSS animation (css/motion.css), not scroll-driven.
     ['.stats .stat', 'up', true],
 
     // Home: video
@@ -75,7 +67,7 @@
     ['.cta-grid > div:first-child', 'left'],
     ['.contact-card', 'right'],
 
-    // Athletes page
+    // Athletes page (hero entrance is CSS-driven)
     ['.grid > .athlete', 'up', 3],
     ['.org-grid > .org', 'alternate', true],
     ['.callout > .is', 'left'],
@@ -87,11 +79,19 @@
   var STAGGER_MS = 90;
   var MAX_DELAY_MS = 540;
 
+  // Anything visible when the script runs is left alone: hiding it now would
+  // make it blink out and back in. Only content below the fold animates.
+  var viewH = window.innerHeight || document.documentElement.clientHeight;
+  function onScreen(el) {
+    var r = el.getBoundingClientRect();
+    return r.top < viewH && r.bottom > 0;
+  }
+
   function tag() {
     RULES.forEach(function (rule) {
       var els = document.querySelectorAll(rule[0]);
       Array.prototype.forEach.call(els, function (el) {
-        if (el.hasAttribute('data-reveal')) return;
+        if (el.hasAttribute('data-reveal') || onScreen(el)) return;
         var effect = rule[1];
         var index = 0;
         if (rule[2] && el.parentElement) {
@@ -109,6 +109,7 @@
   var COUNT_SELECTORS = '.stats .stat strong, .big-pct strong, .results .result strong, .sci-stat strong';
   function prepCounters() {
     Array.prototype.forEach.call(document.querySelectorAll(COUNT_SELECTORS), function (el) {
+      if (onScreen(el)) return;
       var text = el.textContent;
       var nums = text.match(/\d[\d,]*/g);
       if (!nums || nums.length !== 1) return; // skip ranges like "Ages 4–25"
@@ -148,7 +149,7 @@
       if (el.hasAttribute('data-count')) runCounter(el);
       io.unobserve(el);
     });
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+  }, { rootMargin: '0px 0px -24px 0px', threshold: 0 });
 
   Array.prototype.forEach.call(document.querySelectorAll('[data-reveal], [data-count]'), function (el) {
     io.observe(el);

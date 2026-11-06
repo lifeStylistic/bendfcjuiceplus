@@ -1,0 +1,378 @@
+{
+  "checks": [
+    {
+      "name": "Page count is 24 and divisible by 4",
+      "ok": true,
+      "detail": "24 pages"
+    },
+    {
+      "name": "Every page is 5.5 x 8.5 in (396 x 612 pt)",
+      "ok": true,
+      "detail": "all pages"
+    },
+    {
+      "name": "All fonts embedded",
+      "ok": true,
+      "detail": "6 font entries; families: BarlowCondensed-Bold, BarlowCondensed-ExtraBold, Barlow-Regular, Barlow-Bold, Barlow-SemiBold, Barlow-Medium"
+    },
+    {
+      "name": "No text overflow / missing images (build report)",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "name": "Raster images at >= 300 effective ppi",
+      "ok": false,
+      "detail": "p1 team-huddle.jpg 213 ppi; p10 juiceplus-products.jpg 217 ppi; p23 james-traynor.png 200 ppi"
+    },
+    {
+      "name": "Key hyperlinks present in PDF",
+      "ok": true,
+      "detail": "42 link annotations; missing: none"
+    },
+    {
+      "name": "All 6 QR codes decode to the intended URL from 300-dpi renders",
+      "ok": true,
+      "detail": "p15 nutrition-gap-video 1.10in ok; p15 how-to-video 1.10in ok; p17 healthy-starts 1.30in ok; p19 partner 1.05in ok; p24 healthy-starts 1.30in ok; p24 partner 1.00in ok"
+    },
+    {
+      "name": "QR codes at least 1 in square",
+      "ok": true,
+      "detail": "p15 1.10in, p15 1.10in, p17 1.30in, p19 1.05in, p24 1.30in, p24 1.00in"
+    },
+    {
+      "name": "No unexpected blank pages",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "name": "Previews written",
+      "ok": true,
+      "detail": "24 pages, 13 spreads, contact sheet"
+    },
+    {
+      "name": "Home-print imposition: Letter landscape, page placement verified visually, fold order 1..N",
+      "ok": true,
+      "detail": "12 sides; all halves match; folded order correct"
+    }
+  ],
+  "pass": false,
+  "links": [
+    {
+      "page": 15,
+      "uri": "https://bendfcjuiceplus.com/#how-to-enroll"
+    },
+    {
+      "page": 17,
+      "uri": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form"
+    },
+    {
+      "page": 17,
+      "uri": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form"
+    },
+    {
+      "page": 17,
+      "uri": "https://bendfc.juiceplus.com/"
+    },
+    {
+      "page": 17,
+      "uri": "mailto:james.traynor@bendfctimbers.com"
+    },
+    {
+      "page": 17,
+      "uri": "tel:+12069799792"
+    },
+    {
+      "page": 19,
+      "uri": "https://us.juiceplus.com/pages/partner-application?partner=20292664"
+    },
+    {
+      "page": 19,
+      "uri": "https://us.juiceplus.com/pages/partner-application?partner=20292664"
+    },
+    {
+      "page": 21,
+      "uri": "https://pubmed.ncbi.nlm.nih.gov/20689455/"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Bloomer_Goldfarb_MSSE2006.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Bloomer_Goldfarb_MSSE2006.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Chapter_12_download_from_PubMed_May16.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Chapter_12_download_from_PubMed_May16.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Goldfarb_et_al_Effects_of_FVB_on_muscle_function_and_OS_MSSE_2011.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Goldfarb_et_al_Effects_of_FVB_on_muscle_function_and_OS_MSSE_2011.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Goldfarb_et_al_Gender_comparison_of_ex-induced_OS_influence_of_AO_suppl_Appl_Physiol_Nutr_Metab_2007.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Goldfarb_et_al_Gender_comparison_of_ex-induced_OS_influence_of_AO_suppl_Appl_Physiol_Nutr_Metab_2007.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Lamprecht_et_al_BJN_Published_version_final_26.10.13.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Lamprecht_et_al_BJN_Published_version_final_26.10.13.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Lamprecht_et_al_MSSE_Jan09_final.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Lamprecht_F_V_in_health_performance_Acute_Topics_in_Sport_Nutr_Karger_2012.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.shopify.com/s/files/1/0681/4361/2162/files/Lamprecht_F_V_in_health_performance_Acute_Topics_in_Sport_Nutr_Karger_2012.pdf?v=1771252212"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.prod.website-files.com/690083eead8a397654854fba/690083eead8a397654855160_HCP%20Meeting%20Charlotte_final%20presentation_Oct23.pdf"
+    },
+    {
+      "page": 21,
+      "uri": "https://cdn.prod.website-files.com/690083eead8a397654854fba/690083eead8a397654855160_HCP%20Meeting%20Charlotte_final%20presentation_Oct23.pdf"
+    },
+    {
+      "page": 21,
+      "uri": "https://us.juiceplus.com/pages/research?partner=20292664"
+    },
+    {
+      "page": 21,
+      "uri": "https://us.juiceplus.com/pages/research?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/about-us?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/about-us?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/faqs?partner=20292664&hcUrl=%2Fen-US"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/ask-the-experts?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/ask-the-experts?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/research?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/research?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/ingredients?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/ingredients?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/blogs/recipes?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/blogs/recipes?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://www.youtube.com/@juiceplus"
+    },
+    {
+      "page": 23,
+      "uri": "mailto:james.traynor@bendfctimbers.com"
+    },
+    {
+      "page": 23,
+      "uri": "tel:+12069799792"
+    }
+  ],
+  "qr": [
+    {
+      "page": 15,
+      "name": "nutrition-gap-video",
+      "x": 0.8201497395833334,
+      "y": 2.11572265625,
+      "w": 1.0999348958333333,
+      "h": 1.0999348958333333,
+      "decoded": "https://bendfc.youplusjuiceplus.com/presentation/video.the-solution-to-your-nutrition-gap?utm_campaign=juiceplus&utm_medium=shareCopy&utm_source=ios&utm_content=video_5938&utm_term=the-solution-to-your-nutrition-gap&utm_distributor=20292664",
+      "expected": "https://bendfc.youplusjuiceplus.com/presentation/video.the-solution-to-your-nutrition-gap?utm_campaign=juiceplus&utm_medium=shareCopy&utm_source=ios&utm_content=video_5938&utm_term=the-solution-to-your-nutrition-gap&utm_distributor=20292664",
+      "sizeIn": "1.10",
+      "ok": true
+    },
+    {
+      "page": 15,
+      "name": "how-to-video",
+      "x": 0.8201497395833334,
+      "y": 3.8356119791666665,
+      "w": 1.0999348958333333,
+      "h": 1.0999348958333333,
+      "decoded": "https://bendfcjuiceplus.com/#how-to-enroll",
+      "expected": "https://bendfcjuiceplus.com/#how-to-enroll",
+      "sizeIn": "1.10",
+      "ok": true
+    },
+    {
+      "page": 17,
+      "name": "healthy-starts",
+      "x": 0.8201497395833334,
+      "y": 1.6267903645833333,
+      "w": 1.2999674479166667,
+      "h": 1.2999674479166667,
+      "decoded": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form",
+      "expected": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form",
+      "sizeIn": "1.30",
+      "ok": true
+    },
+    {
+      "page": 19,
+      "name": "partner",
+      "x": 0.83056640625,
+      "y": 6.35009765625,
+      "w": 1.0499674479166667,
+      "h": 1.0499674479166667,
+      "decoded": "https://us.juiceplus.com/pages/partner-application?partner=20292664",
+      "expected": "https://us.juiceplus.com/pages/partner-application?partner=20292664",
+      "sizeIn": "1.05",
+      "ok": true
+    },
+    {
+      "page": 24,
+      "name": "healthy-starts",
+      "x": 0.7298177083333334,
+      "y": 2.99658203125,
+      "w": 1.2999674479166667,
+      "h": 1.2999674479166667,
+      "decoded": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form",
+      "expected": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form",
+      "sizeIn": "1.30",
+      "ok": true
+    },
+    {
+      "page": 24,
+      "name": "partner",
+      "x": 0.810546875,
+      "y": 4.8369140625,
+      "w": 1,
+      "h": 1,
+      "decoded": "https://us.juiceplus.com/pages/partner-application?partner=20292664",
+      "expected": "https://us.juiceplus.com/pages/partner-application?partner=20292664",
+      "sizeIn": "1.00",
+      "ok": true
+    }
+  ],
+  "imposition": [
+    {
+      "sheet": 1,
+      "side": "front",
+      "left": 24,
+      "right": 1
+    },
+    {
+      "sheet": 1,
+      "side": "back",
+      "left": 2,
+      "right": 23
+    },
+    {
+      "sheet": 2,
+      "side": "front",
+      "left": 22,
+      "right": 3
+    },
+    {
+      "sheet": 2,
+      "side": "back",
+      "left": 4,
+      "right": 21
+    },
+    {
+      "sheet": 3,
+      "side": "front",
+      "left": 20,
+      "right": 5
+    },
+    {
+      "sheet": 3,
+      "side": "back",
+      "left": 6,
+      "right": 19
+    },
+    {
+      "sheet": 4,
+      "side": "front",
+      "left": 18,
+      "right": 7
+    },
+    {
+      "sheet": 4,
+      "side": "back",
+      "left": 8,
+      "right": 17
+    },
+    {
+      "sheet": 5,
+      "side": "front",
+      "left": 16,
+      "right": 9
+    },
+    {
+      "sheet": 5,
+      "side": "back",
+      "left": 10,
+      "right": 15
+    },
+    {
+      "sheet": 6,
+      "side": "front",
+      "left": 14,
+      "right": 11
+    },
+    {
+      "sheet": 6,
+      "side": "back",
+      "left": 12,
+      "right": 13
+    }
+  ]
+}

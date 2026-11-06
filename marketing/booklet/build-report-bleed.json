@@ -1,0 +1,97 @@
+{
+  "pageCount": 24,
+  "issues": [],
+  "images": [
+    {
+      "page": 1,
+      "src": "../../images/team-huddle.jpg",
+      "natural": "1067x762",
+      "printedIn": "5.75 x 3.63",
+      "effectivePpi": 186
+    },
+    {
+      "page": 1,
+      "src": "../../assets/bendfc-juiceplus-logo.png",
+      "natural": "2000x2000",
+      "printedIn": "1.01 x 1.01",
+      "effectivePpi": 1980
+    },
+    {
+      "page": 10,
+      "src": "../../images/juiceplus-products.jpg",
+      "natural": "960x640",
+      "printedIn": "4.43 x 2.85",
+      "effectivePpi": 217
+    },
+    {
+      "page": 23,
+      "src": "../../images/james-traynor.png",
+      "natural": "160x160",
+      "printedIn": "0.80 x 0.80",
+      "effectivePpi": 200
+    },
+    {
+      "page": 24,
+      "src": "../../assets/bendfc-juiceplus-logo.png",
+      "natural": "2000x2000",
+      "printedIn": "0.75 x 0.75",
+      "effectivePpi": 2667
+    }
+  ],
+  "qrs": [
+    {
+      "page": 15,
+      "name": "nutrition-gap-video",
+      "x": 0.9451497395833334,
+      "y": 2.24072265625,
+      "w": 1.0999348958333333,
+      "h": 1.0999348958333333
+    },
+    {
+      "page": 15,
+      "name": "how-to-video",
+      "x": 0.9451497395833334,
+      "y": 3.9606119791666665,
+      "w": 1.0999348958333333,
+      "h": 1.0999348958333333
+    },
+    {
+      "page": 17,
+      "name": "healthy-starts",
+      "x": 0.9451497395833334,
+      "y": 1.7517903645833333,
+      "w": 1.2999674479166667,
+      "h": 1.2999674479166667
+    },
+    {
+      "page": 19,
+      "name": "partner",
+      "x": 0.95556640625,
+      "y": 6.47509765625,
+      "w": 1.0499674479166667,
+      "h": 1.0499674479166667
+    },
+    {
+      "page": 24,
+      "name": "healthy-starts",
+      "x": 0.8548177083333334,
+      "y": 3.12158203125,
+      "w": 1.2999674479166667,
+      "h": 1.2999674479166667
+    },
+    {
+      "page": 24,
+      "name": "partner",
+      "x": 0.935546875,
+      "y": 4.9619140625,
+      "w": 1,
+      "h": 1
+    }
+  ],
+  "destinations": {
+    "healthy-starts": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form",
+    "partner": "https://us.juiceplus.com/pages/partner-application?partner=20292664",
+    "nutrition-gap-video": "https://bendfc.youplusjuiceplus.com/presentation/video.the-solution-to-your-nutrition-gap?utm_campaign=juiceplus&utm_medium=shareCopy&utm_source=ios&utm_content=video_5938&utm_term=the-solution-to-your-nutrition-gap&utm_distributor=20292664",
+    "how-to-video": "https://bendfcjuiceplus.com/#how-to-enroll"
+  }
+}

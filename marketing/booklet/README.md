@@ -7,6 +7,7 @@ A 24-page program information booklet. Finished size is 5.5 × 8.5 in, portrait,
 | File | What it is |
 |---|---|
 | `booklet.pdf` | **The booklet**: 24 pages in normal reading order, 5.5 × 8.5 in. Use this for FedEx Office and other print shops. |
+| `booklet-letter.pdf` | **Full-page 8.5 × 11 in edition** for FedEx Office's standard 8.5 × 11 bound documents: the same 24 pages laid out for Letter size, with the covers edge to edge and type 25% larger. |
 | `booklet-bleed.pdf` | **Full-bleed edition for FedEx Office**: same 24 pages at 5.75 × 8.75 in, with 0.125 in bleed on every side. The covers run to the edge after trimming to 5.5 × 8.5 in. |
 | `booklet-home-print.pdf` | Imposed for printing at home or in the office: 12 US Letter landscape sides (6 sheets), two booklet pages per side. |
 | `booklet.html`, `booklet.css` | Editable source (content and layout). |
@@ -44,7 +45,19 @@ To edit:
 
 Keep odd pages `recto` and even pages `verso`, and keep the page count divisible by 4. QR destinations live in `DESTINATIONS` in `build.mjs`.
 
-## Printing at FedEx Office, full bleed (no white border)
+## Printing at FedEx Office, 8.5 × 11 bound document (`booklet-letter.pdf`)
+
+1. Upload **`booklet-letter.pdf`** to fedex.com.
+2. Settings:
+   - Size: **8.5" × 11"**, portrait
+   - Color: full color
+   - Sides: **double-sided** (recommended, 12 sheets; single-sided also works, 24 sheets)
+   - Binding: coil or spiral on the left edge
+   - Paper: 32 lb laser, or heavier
+3. The preview should now fill each page with no white border around the covers.
+4. Office printers can leave a very thin unprinted edge on solid-color pages. If you want the black covers guaranteed edge to edge, ask the store for **full bleed** printing.
+
+## Printing at FedEx Office, 5.5 × 8.5 booklet, full bleed (no white border)
 
 1. Upload **`booklet-bleed.pdf`**.
 2. Ask for a **saddle-stitched booklet, full bleed**:

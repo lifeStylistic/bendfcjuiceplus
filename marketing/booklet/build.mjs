@@ -37,14 +37,19 @@ async function makeQRs() {
   }
 }
 
-async function renderPdf(bleed = false) {
-  const file = bleed ? 'booklet-bleed.pdf' : 'booklet.pdf';
+async function renderPdf(mode = 'trim') {
+  const bleed = mode !== 'trim';
+  const file = { trim: 'booklet.pdf', bleed: 'booklet-bleed.pdf', letter: 'booklet-letter.pdf' }[mode];
   const browser = await chromium.launch();
   const page = await browser.newPage();
   await page.goto(pathToFileURL(out('booklet.html')).href, { waitUntil: 'networkidle' });
-  if (bleed) {
+  if (mode === 'bleed') {
     await page.evaluate(() => document.body.classList.add('bleed'));
     await page.addStyleTag({ content: '@page{size:5.75in 8.75in;margin:0;}' });
+  }
+  if (mode === 'letter') {
+    await page.evaluate(() => document.body.classList.add('bleed', 'letter'));
+    await page.addStyleTag({ content: '@page{size:8.5in 11in;margin:0;}' });
   }
   await page.evaluate(() => document.fonts.ready);
   await page.emulateMedia({ media: 'print' });
@@ -95,13 +100,13 @@ async function renderPdf(bleed = false) {
 
   // Document metadata.
   const doc = await PDFDocument.load(await readFile(out(file)));
-  doc.setTitle(bleed ? 'Bend FC × Juice Plus+ Healthy Starts — Program Booklet (FULL BLEED: 0.125 in bleed, trim to 5.5 x 8.5 in)' : 'Bend FC × Juice Plus+ Healthy Starts — Program Booklet');
+  doc.setTitle({ trim: 'Bend FC × Juice Plus+ Healthy Starts — Program Booklet', bleed: 'Bend FC × Juice Plus+ Healthy Starts — Program Booklet (FULL BLEED: 0.125 in bleed, trim to 5.5 x 8.5 in)', letter: 'Bend FC × Juice Plus+ Healthy Starts — Program Booklet (8.5 x 11 in, full page)' }[mode]);
   doc.setAuthor('Bend FC');
-  doc.setSubject(bleed ? 'Reading order. Page 5.75 x 8.75 in including 0.125 in bleed on all sides; trim size 5.5 x 8.5 in.' : 'Healthy Starts program information booklet, 5.5 x 8.5 in, reading order');
+  doc.setSubject({ trim: 'Healthy Starts program information booklet, 5.5 x 8.5 in, reading order', bleed: 'Reading order. Page 5.75 x 8.75 in including 0.125 in bleed on all sides; trim size 5.5 x 8.5 in.', letter: 'Reading order. US Letter 8.5 x 11 in pages, covers edge to edge.' }[mode]);
   doc.setCreator('marketing/booklet/build.mjs (Chromium via Playwright)');
   await writeFile(out(file), await doc.save());
 
-  await writeFile(out(bleed ? 'build-report-bleed.json' : 'build-report.json'), JSON.stringify({ ...report, destinations: DESTINATIONS }, null, 2));
+  await writeFile(out({ trim: 'build-report.json', bleed: 'build-report-bleed.json', letter: 'build-report-letter.json' }[mode]), JSON.stringify({ ...report, destinations: DESTINATIONS }, null, 2));
   return report;
 }
 
@@ -124,11 +129,15 @@ async function impose() {
 
 await makeQRs();
 const report = await renderPdf();
-const bleedReport = await renderPdf(true);
+const bleedReport = await renderPdf('bleed');
+const letterReport = await renderPdf('letter');
 const plan = await impose();
 console.log(`booklet.pdf: ${report.pageCount} pages`);
 console.log(`booklet-bleed.pdf: ${bleedReport.pageCount} pages (5.75 x 8.75 in incl. 0.125 in bleed)`);
 for (const i of bleedReport.issues) report.issues.push('bleed edition: ' + i);
+for (const i of letterReport.issues) report.issues.push('letter edition: ' + i);
+console.log(`booklet-letter.pdf: ${letterReport.pageCount} pages (8.5 x 11 in)`);
+for (const im of letterReport.images) console.log(`  letter image p${im.page} ${im.src} -> ${im.effectivePpi} ppi`);
 console.log(`booklet-home-print.pdf: ${plan.length} Letter sides (${plan.length / 2} sheets)`);
 for (const im of report.images) console.log(`  image p${im.page} ${im.src} ${im.natural} at ${im.printedIn} in -> ${im.effectivePpi} ppi`);
 if (report.issues.length) { console.log('LAYOUT ISSUES:'); report.issues.forEach((i) => console.log('  - ' + i)); process.exitCode = 1; }

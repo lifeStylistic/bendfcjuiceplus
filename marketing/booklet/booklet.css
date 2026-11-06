@@ -191,3 +191,11 @@ body.bleed{--b:.125in;}
 .bleed .cover .crest{left:calc(.3in + .25in + var(--b));top:calc(2.45in + .25in + var(--b));}
 .bleed .cover .body{padding:.48in calc(.3in + .25in + var(--b)) calc(.25in + .25in + var(--b));}
 .bleed .back .panel{padding:calc(.4in + .25in + var(--b)) calc(.35in + .25in + var(--b)) calc(.3in + .25in + var(--b));}
+
+/* ---------- US Letter edition (build adds classes "bleed letter" to <body>) ----------
+   Each 8.5 x 11 in page is laid out at 6.8 x 8.8 in and scaled up 1.25x, so type
+   grows 25% and the covers fill the sheet edge to edge. --b is 0: no extra bleed. */
+body.bleed.letter{--b:0in;}
+body.letter .page{width:calc(8.5in / 1.25);height:calc(11in / 1.25);zoom:1.25;}
+body.letter .cover .panel .ph{height:3.9in;}
+body.letter .cover .crest{top:3.08in;}

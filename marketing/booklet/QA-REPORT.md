@@ -26,6 +26,13 @@ Final run on November 6, 2026 with `npm run build && npm run qa`. Machine-readab
 - No overflow (build check).
 - The cover photo now prints at about 186 ppi (approved: print as is).
 
+## US Letter edition (`booklet-letter.pdf`)
+
+- 24 pages at 612 × 792 pt (8.5 × 11 in), with all six fonts embedded.
+- No overflow (build check). Contact sheet reviewed: the covers fill the page edge to edge.
+- All 6 QR codes decoded correctly from 300-dpi renders. They print at 1.25–1.6 in.
+- Photos print at about 126–175 ppi at this size (approved: print as is).
+
 ## Manual checks
 
 - **Every page and spread inspected** at 110 dpi in `previews/`: 1, 2–3, 4–5, … 22–23, 24.

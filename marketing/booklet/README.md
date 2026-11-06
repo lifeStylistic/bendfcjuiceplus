@@ -7,6 +7,7 @@ A 24-page program information booklet. Finished size is 5.5 × 8.5 in, portrait,
 | File | What it is |
 |---|---|
 | `booklet.pdf` | **The booklet**: 24 pages in normal reading order, 5.5 × 8.5 in. Use this for FedEx Office and other print shops. |
+| `booklet-bleed.pdf` | **Full-bleed edition for FedEx Office**: same 24 pages at 5.75 × 8.75 in, with 0.125 in bleed on every side. The covers run to the edge after trimming to 5.5 × 8.5 in. |
 | `booklet-home-print.pdf` | Imposed for printing at home or in the office: 12 US Letter landscape sides (6 sheets), two booklet pages per side. |
 | `booklet.html`, `booklet.css` | Editable source (content and layout). |
 | `build.mjs` | Builds the QR codes, `booklet.pdf` and `booklet-home-print.pdf`. |
@@ -43,7 +44,19 @@ To edit:
 
 Keep odd pages `recto` and even pages `verso`, and keep the page count divisible by 4. QR destinations live in `DESTINATIONS` in `build.mjs`.
 
-## Printing at FedEx Office (recommended: saddle-stitched booklet)
+## Printing at FedEx Office, full bleed (no white border)
+
+1. Upload **`booklet-bleed.pdf`**.
+2. Ask for a **saddle-stitched booklet, full bleed**:
+   - Page size is 5.75 × 8.75 in, which includes 0.125 in bleed on each side.
+   - Trim to **5.5 × 8.5 in** finished.
+   - Color, double-sided, 24 pages.
+3. FedEx prints full-bleed booklets on larger paper and trims them. This can cost a little more than the standard booklet.
+4. Get one proof copy first.
+
+Interior pages have white backgrounds, so the only color that reaches the trim edge is on the front and back covers. All text and QR codes stay at least 0.375 in inside the trim.
+
+## Printing at FedEx Office, standard (white border)
 
 1. Upload **`booklet.pdf`** (reading order). Don't upload the home-print file; FedEx arranges the pages itself.
 2. Ask for:

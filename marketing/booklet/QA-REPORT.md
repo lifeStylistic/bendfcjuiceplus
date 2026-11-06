@@ -18,6 +18,14 @@ Final run on November 6, 2026 with `npm run build && npm run qa`. Machine-readab
 | Home-print imposition | PASS | 12 Letter landscape sides. Each half of each side was matched by image comparison to the page the plan says belongs there. The fold simulation reads 1–24 in order. |
 | Previews | PASS | 24 page PNGs, 13 spreads, contact sheet |
 
+## Full-bleed edition (`booklet-bleed.pdf`)
+
+- 24 pages at 414 × 630 pt (5.75 × 8.75 in), with all six fonts embedded.
+- All 6 QR codes decoded correctly from 300-dpi renders.
+- Front and back covers checked against a drawn trim line: the artwork extends past the trim on all four sides, and text stays inside the safe area.
+- No overflow (build check).
+- The cover photo now prints at about 186 ppi (approved: print as is).
+
 ## Manual checks
 
 - **Every page and spread inspected** at 110 dpi in `previews/`: 1, 2–3, 4–5, … 22–23, 24.

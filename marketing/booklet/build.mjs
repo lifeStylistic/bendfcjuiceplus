@@ -19,6 +19,8 @@ const out = (f) => path.join(here, f);
 const DESTINATIONS = {
   'healthy-starts': 'https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form',
   'partner': 'https://us.juiceplus.com/pages/partner-application?partner=20292664',
+  'nutrition-gap-video': 'https://bendfc.youplusjuiceplus.com/presentation/video.the-solution-to-your-nutrition-gap?utm_campaign=juiceplus&utm_medium=shareCopy&utm_source=ios&utm_content=video_5938&utm_term=the-solution-to-your-nutrition-gap&utm_distributor=20292664',
+  'how-to-video': 'https://bendfcjuiceplus.com/#how-to-enroll',
 };
 
 const PAGE_W = 5.5 * 72, PAGE_H = 8.5 * 72; // points
@@ -87,7 +89,7 @@ async function renderPdf() {
 
   // Document metadata.
   const doc = await PDFDocument.load(await readFile(out('booklet.pdf')));
-  doc.setTitle('Bend FC × Juice Plus+ Healthy Starts — Program Booklet (Review Draft)');
+  doc.setTitle('Bend FC × Juice Plus+ Healthy Starts — Program Booklet');
   doc.setAuthor('Bend FC');
   doc.setSubject('Healthy Starts program information booklet, 5.5 x 8.5 in, reading order');
   doc.setCreator('marketing/booklet/build.mjs (Chromium via Playwright)');

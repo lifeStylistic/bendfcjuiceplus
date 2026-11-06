@@ -1,6 +1,6 @@
 # Bend FC × Juice Plus+ Healthy Starts booklet
 
-A 24-page program information booklet. Finished size is 5.5 × 8.5 in, portrait, with no bleed. It is **REVIEW DRAFT** until every item in `audit/review-checklist.md` is resolved.
+A 24-page program information booklet. Finished size is 5.5 × 8.5 in, portrait, with no bleed. **Final edition, November 2026.** The decisions behind it are in `audit/review-checklist.md`.
 
 ## Files
 
@@ -15,7 +15,7 @@ A 24-page program information booklet. Finished size is 5.5 × 8.5 in, portrait,
 | `qr/` | Vector QR codes (generated). |
 | `previews/` | Page PNGs (110 dpi), spreads and `contact-sheet.png` (generated). |
 | `audit/source-audit.md` | Every printed fact mapped to its source, plus image and QR inventory. |
-| `audit/review-checklist.md` | Open questions (`[NEED FROM JAMES]`). |
+| `audit/review-checklist.md` | Decisions log: James's answers to the review questions. |
 | `QA-REPORT.md` | What was checked and the remaining limits. |
 
 Images, logo and fonts are read from the site's own `../../images`, `../../assets` and `../../fonts` folders, so the booklet and website share one set of assets.
@@ -34,7 +34,7 @@ npm run build      # QR codes + booklet.pdf + booklet-home-print.pdf; exits non-
 npm run qa         # checks + previews/ + qa-results.json
 ```
 
-`npm run all` runs both. Expect one QA failure until higher-resolution photos are supplied: three images are below 300 ppi.
+`npm run all` runs both. Expect one QA warning: three photos are below 300 ppi. James approved printing them as is.
 
 To edit:
 1. Change the text in `booklet.html`.

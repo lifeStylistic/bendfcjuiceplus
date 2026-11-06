@@ -28,17 +28,17 @@
     {
       "name": "Key hyperlinks present in PDF",
       "ok": true,
-      "detail": "27 link annotations; missing: none"
+      "detail": "42 link annotations; missing: none"
     },
     {
-      "name": "All 4 QR codes decode to the intended URL from 300-dpi renders",
+      "name": "All 6 QR codes decode to the intended URL from 300-dpi renders",
       "ok": true,
-      "detail": "p17 healthy-starts 1.30in ok; p19 partner 1.05in ok; p24 healthy-starts 1.30in ok; p24 partner 1.00in ok"
+      "detail": "p15 nutrition-gap-video 1.10in ok; p15 how-to-video 1.10in ok; p17 healthy-starts 1.30in ok; p19 partner 1.05in ok; p24 healthy-starts 1.30in ok; p24 partner 1.00in ok"
     },
     {
       "name": "QR codes at least 1 in square",
       "ok": true,
-      "detail": "p17 1.30in, p19 1.05in, p24 1.30in, p24 1.00in"
+      "detail": "p15 1.10in, p15 1.10in, p17 1.30in, p19 1.05in, p24 1.30in, p24 1.00in"
     },
     {
       "name": "No unexpected blank pages",
@@ -58,6 +58,10 @@
   ],
   "pass": false,
   "links": [
+    {
+      "page": 15,
+      "uri": "https://bendfcjuiceplus.com/#how-to-enroll"
+    },
     {
       "page": 17,
       "uri": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form"
@@ -159,6 +163,62 @@
       "uri": "https://us.juiceplus.com/pages/research?partner=20292664"
     },
     {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/about-us?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/about-us?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/healthy-starts?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/faqs?partner=20292664&hcUrl=%2Fen-US"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/ask-the-experts?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/ask-the-experts?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/research?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/research?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/ingredients?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/pages/ingredients?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/blogs/recipes?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://us.juiceplus.com/blogs/recipes?partner=20292664"
+    },
+    {
+      "page": 22,
+      "uri": "https://www.youtube.com/@juiceplus"
+    },
+    {
       "page": 23,
       "uri": "mailto:james.traynor@bendfctimbers.com"
     },
@@ -168,6 +228,30 @@
     }
   ],
   "qr": [
+    {
+      "page": 15,
+      "name": "nutrition-gap-video",
+      "x": 0.8201497395833334,
+      "y": 2.11572265625,
+      "w": 1.0999348958333333,
+      "h": 1.0999348958333333,
+      "decoded": "https://bendfc.youplusjuiceplus.com/presentation/video.the-solution-to-your-nutrition-gap?utm_campaign=juiceplus&utm_medium=shareCopy&utm_source=ios&utm_content=video_5938&utm_term=the-solution-to-your-nutrition-gap&utm_distributor=20292664",
+      "expected": "https://bendfc.youplusjuiceplus.com/presentation/video.the-solution-to-your-nutrition-gap?utm_campaign=juiceplus&utm_medium=shareCopy&utm_source=ios&utm_content=video_5938&utm_term=the-solution-to-your-nutrition-gap&utm_distributor=20292664",
+      "sizeIn": "1.10",
+      "ok": true
+    },
+    {
+      "page": 15,
+      "name": "how-to-video",
+      "x": 0.8201497395833334,
+      "y": 3.8356119791666665,
+      "w": 1.0999348958333333,
+      "h": 1.0999348958333333,
+      "decoded": "https://bendfcjuiceplus.com/#how-to-enroll",
+      "expected": "https://bendfcjuiceplus.com/#how-to-enroll",
+      "sizeIn": "1.10",
+      "ok": true
+    },
     {
       "page": 17,
       "name": "healthy-starts",

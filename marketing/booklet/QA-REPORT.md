@@ -1,6 +1,6 @@
 # QA report
 
-Run on November 4, 2026 with `npm run build && npm run qa`. Machine-readable results are in `qa-results.json`.
+Final run on November 6, 2026 with `npm run build && npm run qa`. Machine-readable results are in `qa-results.json`.
 
 ## Automated checks (`qa.mjs`)
 
@@ -10,10 +10,10 @@ Run on November 4, 2026 with `npm run build && npm run qa`. Machine-readable res
 | Page size | PASS | All pages 396 × 612 pt (5.5 × 8.5 in) |
 | Fonts embedded | PASS | Barlow Regular/Medium/SemiBold/Bold and Barlow Condensed Bold/ExtraBold, all embedded and subset. No fallback fonts: the glyphs missing from the font subset (`→ ≈ † …`) were removed from the copy. The home-print PDF also has all fonts embedded. |
 | Text overflow, missing images | PASS | `build.mjs` measures every page frame and stops on overflow |
-| Raster images ≥ 300 effective ppi | **FAIL (known)** | Cover photo 213 ppi, product photo 217 ppi, headshot 200 ppi. Higher-resolution originals are needed (review checklist #22–24). |
-| Hyperlinks | PASS | 27 link annotations, including the Healthy Starts and Partner forms, mailto, tel and the research links |
-| QR decoding from the final PDF | PASS | Each page rendered at 300 dpi with `pdftoppm`; each QR occurrence cropped and decoded with jsQR. p17 and p24 decode to `https://us.juiceplus.com/pages/healthy-starts?partner=20292664#joinnow-form`; p19 and p24 decode to `https://us.juiceplus.com/pages/partner-application?partner=20292664`. |
-| QR size | PASS | 1.00–1.30 in, black on white, 4-module quiet zone, no photo underneath, all inside the margins and away from the gutter |
+| Raster images ≥ 300 effective ppi | **FAIL (accepted)** | Cover photo 213 ppi, product photo 217 ppi, headshot 200 ppi. James approved printing as is. |
+| Hyperlinks | PASS | 42 link annotations, including the Healthy Starts and Partner forms, mailto, tel and the research links |
+| QR decoding from the final PDF | PASS | Each page rendered at 300 dpi with `pdftoppm`; each of the 6 QR occurrences cropped and decoded with jsQR. p17 and p24 decode to the Healthy Starts join form (`…healthy-starts?partner=20292664#joinnow-form`); p19 and p24 decode to the Partner application (`…partner-application?partner=20292664`); p15 decodes to the "Solution to Your Nutrition Gap" video URL and to `https://bendfcjuiceplus.com/#how-to-enroll`. |
+| QR size | PASS | 1.00–1.30 in (video codes 1.10 in), black on white, 4-module quiet zone, no photo underneath, all inside the margins and away from the gutter |
 | Blank pages | PASS | None |
 | Home-print imposition | PASS | 12 Letter landscape sides. Each half of each side was matched by image comparison to the page the plan says belongs there. The fold simulation reads 1–24 in order. |
 | Previews | PASS | 24 page PNGs, 13 spreads, contact sheet |
@@ -40,9 +40,10 @@ Run on November 4, 2026 with `npm run build && npm run qa`. Machine-readable res
 
 - Every price, percentage, age, duration and fee was compared with `audit/source-audit.md`. Conditions sit beside the benefit they qualify: "free" always comes with "qualifying adult subscription" and "$12 per shipment".
 - **Quotations:** only the DuBois quote, verbatim with its disclosure from index.html. There are no testimonials or quotes from Bend FC representatives.
+- **Video codes:** the p15 video QR codes are labeled "Watch" and the page says to use p17 to enroll, so they can't be confused with the enrollment code.
 - **FAQ coverage:** all 5 Healthy Starts FAQs (page 20) and all 7 Partner FAQs (page 19) appear with their answers unchanged. One FAQ was added ("Do I have to become a Partner?"), and its answer comes from the site's structure.
 - **Calls to action:** Healthy Starts is primary (large green/white block, 1.3 in QR); Partner is secondary and labeled "Optional" (1.0 in QR) on pages 2, 17–19 and 24.
-- **Open facts:** all missing or conflicting facts are in pink `[NEED FROM JAMES]` boxes and in `audit/review-checklist.md` (24 items).
+- **Open facts:** James answered every review question on Nov 6, 2026 (`audit/review-checklist.md`). No draft markers remain, and the athletes pages were removed at his request.
 
 ## Could not be done
 

@@ -2,6 +2,11 @@
 
 Prepared November 4, 2026 for `marketing/booklet/booklet.html`. Every fact printed in the booklet is listed here with its source in this repository.
 
+**Final edition (Nov 6, 2026):**
+- James's answers to the open questions are now the source for the facts listed in `review-checklist.md`, and they override the gaps and conflicts noted below.
+- The athletes rows no longer apply: those pages were removed.
+- Two video QR codes were added on p15, using URLs copied from index.html (the video card href, and the `#how-to-enroll` section).
+
 ## Sources inspected
 
 | Source | Status | Notes |
